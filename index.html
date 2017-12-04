@@ -12,25 +12,29 @@
 
   <!--Colmar Academy Header and Navigation-->
   <header class="flex">
-    <nav class="container flex">
+    <nav class="container flex" role="presentation">
       <div class="logo flex">
         <img src="./resources/images/ic-logo.svg" alt="Colmar Academy Logo">
         <span id="bold">COLMAR</span>
         <span id="grey">ACADEMY</span>
       </div>
+
+      <!-- Desktop Navigation-->
       <div class="navigation flex">
-        <ul>
-          <li><a href="#">On Campus</a></li>
-          <li><a href="#">Online</a></li>
-          <li><a href="#">For Companies</a></li>
-          <li><a href="#">Sign In</a></li>
+        <ul role="presentation">
+          <li><a href="#" role="link">On Campus</a></li>
+          <li><a href="#" role="link">Online</a></li>
+          <li><a href="#" role="link">For Companies</a></li>
+          <li><a href="#" role="link">Sign In</a></li>
         </ul>
       </div>
-      <div class="mobile nav-mob flex">
-        <a href="#" class="flex" id="tablet-none"><img src="resources/images/ic-logo.svg" alt=""></a>
-        <a href="#" class="flex"><img src="resources/images/ic-on-campus.svg" alt=""></a>
-        <a href="#" class="flex"><img src="resources/images/ic-online.svg" alt=""></a>
-        <a href="#" class="flex"><img src="resources/images/ic-login.svg" alt=""></a>
+
+      <!--Mobile Navigation-->
+      <div class="mobile nav-mob flex" role="presentation">
+        <a href="#" class="flex" id="tablet-none" role="link"><img src="resources/images/ic-logo.svg" alt="Colmar Academy Logo"></a>
+        <a href="#" class="flex" role="link"><img src="resources/images/ic-on-campus.svg" alt="On Campus Icon"></a>
+        <a href="#" class="flex" role="link"><img src="resources/images/ic-online.svg" alt="Online Icon"></a>
+        <a href="#" class="flex" role="link"><img src="resources/images/ic-login.svg" alt="Login Icon"></a>
       </div>
     </nav>
   </header>
@@ -39,20 +43,21 @@
   <main>
 
     <!-- Banner Section -->
-    <div class="banner container flex">
-      <div class="banner-img">
+    <div class="banner container flex" role="banner">
+      <div class="banner-img" role="img">
         <img src="./resources/images/banner.jpg" alt="Colmar Study Group">
       </div>
       <div class="banner-text flex">
         <h1>Learn something new everyday</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <a href="#" class="btn">Start Here</a>
+        <a href="#" class="btn" role="button">Start Here</a>
       </div>
     </div>
 
     <!--Information Section -->
-    <!--Left Section-->
     <div class="info container flex">
+
+      <!--Left Section-->
       <div class="info-left flex">
         <img src="./resources/images/information-main.jpg" alt="Outdoor reading">
         <h3>It doesn't hurt to keep practicing</h3>
@@ -101,14 +106,14 @@
 
   <!--Start Learning Section-->
   <div class="learn container flex">
-    <h3 class="learn-header">Start Learning</h3>
+    <h3 class="learn-header" role="header">Start Learning</h3>
     <div class="courses flex">
 
-      <!--Software Engineering-->
+      <!--Software Engineering - Desktop-->
       <div class="course flex">
         <img src="resources/images/course-software.jpg" alt="Desktop Monitors">
         <div class="course-text">
-          <h3 class="course-header">Software Engineering</h3>
+          <h3 class="course-header" role="header">Software Engineering</h3>
           <p>COURSES</p>
           <p>Web Development, Mobile Development, iOT, APIs</p>
         </div>
@@ -118,69 +123,81 @@
       <div class="course flex">
         <img src="resources/images/course-computer-art.jpg" alt="Mobile Phone Screen">
         <div class="course-text">
-          <h3 class="course-header">Computer art</h3>
+          <h3 class="course-header" role="header">Computer art</h3>
           <p>COURSES</p>
           <p>Imagining &amp; Design, Web Design, Motion Graphics &amp; Visual Effects</p>
         </div>
       </div>
 
-        <div class="course flex">
-          <img src="resources/images/course-design.jpg" alt="Man Holding Camera">
-          <div class="course-text">
-            <h3 class="course-header">Design</h3>
-            <p>COURSES</p>
-            <p>User Experience Design, User Research, Visual Design</p>
-          </div>
-        </div>
-
-        <div class="course flex">
-          <img src="resources/images/course-data.jpg" alt="Laptop Screen Displaying Analytics">
-          <div class="course-text">
-            <h3 class="course-header">Data</h3>
-            <p>COURSES</p>
-            <p>Data Science, Big Data, SQL, Data Visualization</p>
-          </div>
-        </div>
-
-        <div class="course flex">
-          <img src="resources/images/course-business.jpg" alt="Chess Board">
-          <div class="course-text">
-            <h3 class="course-header">Business</h3>
-            <p>COURSES</p>
-            <p>Product Development, Business Development, Startup</p>
-          </div>
-        </div>
-
-        <div class="course flex">
-          <img src="resources/images/course-marketing.jpg" alt="Woman Using Smart Watch">
-          <div class="course-text">
-            <h3 class="course-header">Computer art</h3>
-            <p>COURSES</p>
-            <p>Analytics, Content Marketing, Mobile Marketing</p>
-          </div>
+      <!--Design-->
+      <div class="course flex">
+        <img src="resources/images/course-design.jpg" alt="Man Holding Camera">
+        <div class="course-text">
+          <h3 class="course-header" role="header">Design</h3>
+          <p>COURSES</p>
+          <p>User Experience Design, User Research, Visual Design</p>
         </div>
       </div>
-      <div class="mobile-courses flex mobile">
-        <span class="mobile-span">Software engineering</span>
-        <span class="mobile-span">Computer art</span>
-        <span class="mobile-span">Design</span>
-        <span class="mobile-span">Data</span>
-        <span class="mobile-span">Business</span>
-        <span class="mobile-span">Marketing</span>
+
+      <!--Data-->
+      <div class="course flex">
+        <img src="resources/images/course-data.jpg" alt="Laptop Screen Displaying Analytics">
+        <div class="course-text">
+          <h3 class="course-header" role="header">Data</h3>
+          <p>COURSES</p>
+          <p>Data Science, Big Data, SQL, Data Visualization</p>
+        </div>
       </div>
+
+      <!--Business-->
+      <div class="course flex">
+        <img src="resources/images/course-business.jpg" alt="Chess Board">
+        <div class="course-text">
+          <h3 class="course-header" role="header">Business</h3>
+          <p>COURSES</p>
+          <p>Product Development, Business Development, Startup</p>
+        </div>
+      </div>
+
+      <!--Computer Art-->
+      <div class="course flex">
+        <img src="resources/images/course-marketing.jpg" alt="Woman Using Smart Watch">
+        <div class="course-text">
+          <h3 class="course-header" role="header">Computer art</h3>
+          <p>COURSES</p>
+          <p>Analytics, Content Marketing, Mobile Marketing</p>
+        </div>
+      </div>
+
     </div>
+
+    <!--Software Engineering - Mobile-->
+    <div class="mobile-courses flex mobile">
+      <span class="mobile-span" role="link">Software engineering</span>
+      <span class="mobile-span" role="link">Computer art</span>
+      <span class="mobile-span" role="link">Design</span>
+      <span class="mobile-span" role="link">Data</span>
+      <span class="mobile-span" role="link">Business</span>
+      <span class="mobile-span" role="link">Marketing</span>
+    </div>
+  </div>
 
   <!--Thesis Section-->
   <div class="thesis container flex">
     <h2>Thesis exhibit</h2>
     <div class="thesis-contents flex">
+
+      <!--Left Section-->
       <div class="thesis-left flex">
-        <video src="./resources/videos/thesis.mp4" controls="true"></video>
+        <video src="./resources/videos/thesis.mp4" controls="true" role="application"></video>
         <h3>Reimagine urban</h3>
         <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et euismod augue. Ut feugiat turpis congue orci viverra, id dignissim est efficitur. Suspendisse potenti. Fusce non nisi nec lectus tempor tincidunt et vitae neque. Etiam congue enim in libero dapibus, quis dignissim mauris hendrerit.</p>
       </div>
 
+      <!--Right Section-->
       <div class="thesis-right flex">
+
+        <!--Fisma: Design-->
         <div class="thesis-topic flex">
           <img src="./resources/images/thesis-fisma.jpg" class="thesis-img" alt="Smartphone Resting on Table">
           <div class="event-text flex">
@@ -188,6 +205,8 @@
             <p>Designer showcase of new prototype product</p>
           </div>
         </div>
+
+        <!--Now and Then-->
         <div class="thesis-topic flex">
           <img src="./resources/images/thesis-now-and-then.jpg" class="thesis-img" alt="New York Skyline">
           <div class="event-text flex">
@@ -195,13 +214,18 @@
             <p>Research study about New York's population density</p>
           </div>
         </div>
+
       </div>
     </div>
   </div>
 
   <!--Footer-->
   <footer>
+
+    <!--Follow Us-->
     <p class="copyright">Follow us: <a href="#"><i class="fa fa-twitter"></i> twitter</a> - <a href="#"><i class="fa fa-facebook"></i> facebook</a> - <a href="#"><i class="fa fa-instagram"></i> instagram</a></p>
+
+    <!--Copyright, Terms & Privacy-->
       <div class="container flex">
         <p class="copyright">&#169; 2016 Colmar Academy. All rights reserved.</p>
         <div class="footer-right flex">
@@ -209,8 +233,8 @@
           <p class="copyright"><a href="#">Privacy</a></p>
         </div>
       </div>
-  </footer>
 
+  </footer>
 
 </body>
 </html>

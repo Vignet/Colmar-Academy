@@ -4,6 +4,10 @@ html {
   color: #36454f;
 }
 
+body {
+  background-color: #F7F7F4;
+}
+
 .container {
   margin: 0 auto;
   width: 100%;
@@ -157,6 +161,7 @@ main {
   background-color: #F7F7F4;
   flex-direction: column;
   padding-bottom: 2rem;
+  border-bottom: 1px solid #D8D8D8
 }
 
 .thesis-left {
@@ -186,7 +191,8 @@ video {
 /* Footer Section */
 footer {
   background-color: #F7F7F4;
-  padding-top: 1rem;
+  padding-bottom: 3rem;
+  padding-top: 1rem
 }
 
 footer .container {
@@ -195,7 +201,7 @@ footer .container {
 
 .copyright {
   font-size: 0.75rem;
-  margin: 1rem 1.5rem;
+  margin: 0rem 1.5rem 1rem 1.5rem
 }
 
 
@@ -211,7 +217,7 @@ footer .container {
 
 .banner-text h1 {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .banner-text p {
@@ -229,7 +235,6 @@ footer .container {
   width: 40%;
 }
 
-
 .event-text {
   justify-content: center;
   align-items: flex-start;
@@ -243,7 +248,7 @@ footer .container {
 }
 
 .event-text p {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   color: #7A7A7A;
   font-weight: 300;
   line-height: 1.5;
@@ -281,8 +286,8 @@ footer .container {
 
 .course-header {
   font-size: 1.3rem;
-  margin-top: 1.25rem;
-  padding-bottom: 1.25rem;
+  margin-top: 1rem;
+  padding-bottom: 1.5rem;
 }
 
 .course-text p {
@@ -357,7 +362,7 @@ footer .container {
 }
 
 /* Navigation Breakpoint */
-/* Mobile */
+/* Phone */
 @media screen and (max-width: 590px) {
 
 .logo, .navigation, .info-left, .courses, .thesis-left h3, .thesis-left p, .thesis-right, .event-img, .footer-right {
@@ -440,6 +445,10 @@ h3.learn-header, .thesis h2 {
   font-size: 1.3rem;
  }
 
+ .thesis {
+   border-bottom: none;
+ }
+
  .thesis-left {
    width: 100%;
    margin: 0;
@@ -453,13 +462,13 @@ h3.learn-header, .thesis h2 {
    width: 100%;
  }
 
- footer {
-   padding-top: 1rem;
+ p.copyright, footer .container {
+   text-align: center;
+   justify-content: center;
  }
 
- p.copyright {
-   margin-top: 0rem;
-   margin-bottom: 1rem;
+ footer {
+   padding-top: 0rem;
  }
 
  .mobile-span:hover {
@@ -469,7 +478,7 @@ h3.learn-header, .thesis h2 {
  }
 }
 
-/*Tablet*/
+/* Tablet */
 @media screen and (max-width: 1024px) and (min-width: 590px) {
 
   .navigation {
