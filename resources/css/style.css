@@ -78,7 +78,7 @@ main {
 }
 
 .banner-text .btn {
-  padding: 1rem 0rem;
+  padding: 0.5rem 0rem;
   text-align: center;
   background-color: #2EAEFF;
   color: #EDF5F5;
@@ -130,7 +130,7 @@ main {
 }
 
 .courses.flex {
-  width: 100%;
+  margin: 0 4rem;
   width: 56.5rem;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -439,7 +439,7 @@ h3.learn-header, .thesis h2 {
 
 .mobile-span {
   background-color: #D8D8D8;
-  padding: 1.5rem 0 1.5rem 1rem;
+  padding: 1rem 0 1.5rem 1rem;
   margin-bottom: .5rem;
   text-align: left;
   font-size: 1.3rem;
