@@ -369,7 +369,7 @@ footer .container {
    display: none;
  }
 
-main, .banner-text.flex, a.btn, .event.flex {
+main, .event.flex {
    margin: 0 auto;
  }
 
@@ -380,8 +380,15 @@ main, .banner-text.flex, a.btn, .event.flex {
 }
 
 .banner-text {
-  width: 80%;
   text-align: center;
+  margin: 0 1rem;
+  width: auto;
+}
+
+.banner-text .btn {
+margin: 0;
+padding: 1rem 0;
+width: 100%;
 }
 
 .banner-text h1, .banner-text p {
