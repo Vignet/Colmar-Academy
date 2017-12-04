@@ -3,10 +3,6 @@ html {
   font-family: "Roboto", "Helvetica", sans-serif;
   color: #36454f;
 }
-/*
-div {
-  border: solid 2px green;
-}*/
 
 .container {
   margin: 0 auto;
@@ -358,11 +354,11 @@ footer .container {
 
 @media screen and (max-width: 590px) {
 
-.logo, .navigation, .info-left, .courses, .thesis-left h3, .thesis-left p, .thesis-right {
+.logo, .navigation, .info-left, .courses, .thesis-left h3, .thesis-left p, .thesis-right, .event-img, .footer-right {
    display: none;
  }
 
-main {
+main, .banner-text.flex, a.btn, .event.flex {
    margin: 0 auto;
  }
 
@@ -372,18 +368,9 @@ main {
   align-content: center;
 }
 
-.banner-img {
-  width: 100%;
-  margin: 0;
-}
-
 .banner-text {
   width: 80%;
   text-align: center;
-}
-
-.banner-text.flex, a.btn, .event.flex {
-  margin: 0 auto;
 }
 
 .banner-text h1, .banner-text p {
@@ -402,7 +389,7 @@ main {
   padding: 1rem 1rem 2rem 1rem;
 }
 
-.info-right.flex {
+.info-right.flex, .banner-img {
   width: 100%;
   margin: 0 auto;
 }
@@ -416,13 +403,9 @@ img.mobile {
   padding: 0rem;
 }
 
-.event {
+.event, .thesis-topic {
   flex-direction: column;
 }
-
-.event-img {
-   display: none;
- }
 
 .event h3 {
   margin-top: 1rem;
@@ -432,7 +415,7 @@ img.mobile {
   background-color: #F7F7F4;
 }
 
-h3.learn-header {
+h3.learn-header, .thesis h2 {
   padding-bottom: 1rem;
 }
 
@@ -440,12 +423,6 @@ h3.learn-header {
   flex-direction: column;
   padding: 0 1rem 2rem 1rem;
   border-bottom: 1px solid #D8D8D8;
-}
-
-.mobile-span:hover {
-  background-color: #2EAEFF;
-  color: white;
-  transition: background-color 200ms linear, color 200ms linear;
 }
 
 .mobile-span {
@@ -461,20 +438,12 @@ h3.learn-header {
    margin: 0;
  }
 
- .thesis h2 {
-   padding-bottom: 1rem;
+ .thesis.container.flex {
+   padding-bottom: 1.5rem;
  }
 
  video {
    width: 100%;
- }
-
- .thesis-topic {
-   flex-direction: column;
- }
-
- .thesis.container.flex {
-   padding-bottom: 1.5rem;
  }
 
  footer {
@@ -486,8 +455,10 @@ h3.learn-header {
    margin-bottom: 1rem;
  }
 
- .footer-right {
-   display: none;
+ .mobile-span:hover {
+   background-color: #2EAEFF;
+   color: white;
+   transition: background-color 200ms linear, color 200ms linear;
  }
 
 }
@@ -504,14 +475,13 @@ h3.learn-header {
     justify-content: flex-end;
   }
 
-  .mobile.nav-mob img{
+  .mobile.nav-mob a {
     padding: 0rem 2.5rem;
   }
 
-  .mobile.nav-mob img:first-child {
+  #tablet-none {
     display: none;
   }
-
 
   .courses.flex {
     width: 37rem;
@@ -524,7 +494,7 @@ h3.learn-header {
   .banner-img, .banner-text {
     width: 100%;
   }
-
+  
   .banner-img {
     margin: 0rem;
   }
@@ -538,7 +508,7 @@ h3.learn-header {
   }
 
   .banner-text {
-    padding: 2rem 0rem 0rem 0rem;
+    padding-top: 2rem;
     text-align: center;
   }
   .btn {
